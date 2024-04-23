@@ -1,0 +1,6 @@
+ntu_surSeg 
+
+Total vocab: 16544
+Labeled types: 4419
+Test size: 200
+Labeled (train/select) tokens: 15686
