@@ -1,0 +1,6 @@
+tau_surSegGls 
+
+Total vocab: 11897
+Labeled types: 2834
+Test size: 200
+Labeled (train/select) tokens: 11043

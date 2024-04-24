@@ -1,6 +1,0 @@
-tau_gls 
-
-Total vocab: 11897
-Labeled types: 2828
-Test size: 200
-Labeled (train/select) tokens: 10558

@@ -1,0 +1,6 @@
+btz_surSegGls 
+
+Total vocab: 3779
+Labeled types: 1435
+Test size: 200
+Labeled (train/select) tokens: 3370

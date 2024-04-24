@@ -1,0 +1,6 @@
+lez_gls 
+
+Total vocab: 11211
+Labeled types: 2599
+Test size: 200
+Labeled (train/select) tokens: 10110

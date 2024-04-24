@@ -1,0 +1,6 @@
+lez_surSeg 
+
+Total vocab: 13953
+Labeled types: 3472
+Test size: 200
+Labeled (train/select) tokens: 12409

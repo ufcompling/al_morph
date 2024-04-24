@@ -1,6 +1,0 @@
-ntu_gls 
-
-Total vocab: 15353
-Labeled types: 3746
-Test size: 200
-Labeled (train/select) tokens: 14828
