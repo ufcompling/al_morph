@@ -63,6 +63,27 @@ for task in ['surSeg', 'surSegGls', 'gls']:
 						f.write('date' + '\n')
 						f.write('\n')
 
+			select = 'all'
+			for arch in ['transformer']: #, 'transformer_tiny', 'lstm']:
+
+				with open('pbs/' + lg + '_' + task + size + '_select' + select + '_' + arch +'.pbs', 'w') as f:
+					first_string = '''#!/bin/bash\n#SBATCH --job-name=''' + lg + '_' + task + size + '_select' + select + '_' + arch + '    # Job name'
+
+					f.write(first_string + '\n')
+					f.write(second_string + '\n')
+
+					f.write('python scripts/fairseq_wu.py /blue/liu.ying/al_morphseg/al_trainselect/ ' + lg + ' ' + size + ' ' + select + ' ' + arch + ' ' + task + '\n')
+					f.write('\n')
+
+					f.write('module unload fairseq' + '\n')
+					f.write('module load python3' + '\n')
+					f.write('\n')
+					f.write('python scripts/eval.py /blue/liu.ying/al_morphseg/al_trainselect/ ' + lg + ' ' + size + ' ' + select + ' ' + arch + ' ' + task + '\n')
+					f.write('\n')
+			
+					f.write('date' + '\n')
+					f.write('\n')
+
 for task in ['surSeg', 'surSegGls', 'gls']:
 	
 	iterations = int(overall_max_size / 25)
@@ -75,14 +96,15 @@ for task in ['surSeg', 'surSegGls', 'gls']:
 					if lg + '_' + task + size + '_select' + select + '_' + arch +'.pbs' in os.listdir('pbs/'):
 						together_file.write('sbatch pbs/' + lg + '_' + task + size + '_select' + select + '_' + arch +'.pbs' + '\n')
 '''
-for lg in ['btz']:
-	for task in ['surSeg', 'surSegGls', 'gls']:
-		select = 0
-		while select < 5000:
-			try:
-				os.system('bash pbs/' + lg + '_' + task + '_select' + str(select) + '.sh')
-				print('pbs/' + lg + '_' + task + '_select' + str(select) + '.sh')
-				select += 25
-			except:
-				pass
+for size in sizes:
+	for lg in ['btz']:
+		for task in ['surSeg']: #, 'surSegGls', 'gls']:
+			select = 25
+			while select < 200:
+				try:
+					os.system('bash pbs/' + lg + '_' + task + '_select' + str(select) + '.sh')
+					print('pbs/' + lg + '_' + task + '_select' + str(select) + '.sh')
+					select += 25
+				except:
+					pass
 '''
