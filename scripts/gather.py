@@ -15,7 +15,7 @@ for task in ['surSeg']:#, 'surSegGls', 'gls']:
 	for lg in lgs:
 		for size in sizes:
 			select = 0
-			while select < 100:
+			while select < 1000:
 				evaluation_file = datadir + lg + '_' + task + size + '/select' + str(select) + '/' + arch + '/eval.txt'
 				if os.path.exists(evaluation_file):
 					precision = ''
@@ -42,3 +42,30 @@ for task in ['surSeg']:#, 'surSegGls', 'gls']:
 					print(lg, task, size, select)
 
 				select += 25
+
+			select = 'all'
+			evaluation_file = datadir + lg + '_' + task + size + '/select' + str(select) + '/' + arch + '/eval.txt'
+			if os.path.exists(evaluation_file):
+				precision = ''
+				recall = ''
+				f1 = ''
+				with open(evaluation_file) as f:
+					for line in f:
+						toks = line.strip().split()
+						if line.startswith('Precision'):
+							precision = toks[1]
+						if line.startswith('Recall'):
+							recall = toks[1]
+						if line.startswith('F1'):
+							f1 = toks[1]
+
+				info = [lg, task, size, select, arch, 'precision', precision]
+				outfile.write(' '.join(str(tok) for tok in info) + '\n')
+				info = [lg, task, size, select, arch, 'recall', recall]
+				outfile.write(' '.join(str(tok) for tok in info) + '\n')
+				info = [lg, task, size, select, arch, 'f1', f1]
+				outfile.write(' '.join(str(tok) for tok in info) + '\n')
+
+			else:
+				print(lg, task, size, select)
+				

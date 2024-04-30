@@ -14,10 +14,8 @@ def main(datadir, lang, size, select, arch, task = 'surSeg'):
 
 	sub_datadir = datadir + lang + '_' + task + size + '/select' + select + '/'
 	previous_datadir = ''
-	try:
+	if select not in ['0', 'all']:
 		previous_datadir = datadir + lang + '_' + task + size + '/select' + str(int(select) - 25) + '/'
-	except:
-		pass
 
 	if select == '0':
 		os.system('cp ' + 'al_trainselect/train.' + lang + '_' + task + size + '.input ' + sub_datadir)
@@ -25,13 +23,13 @@ def main(datadir, lang, size, select, arch, task = 'surSeg'):
 		os.system('cp ' + 'al_trainselect/select.' + lang + '_' + task + size + '.input ' + sub_datadir)
 		os.system('cp ' + 'al_trainselect/select.' + lang + '_' + task + size + '.output ' + sub_datadir)
 
-	if select == 'all':
+	elif select == 'all':
 		os.system('cat ' + 'al_trainselect/train.' + lang + '_' + task + size + '.input ' + 'al_trainselect/select.' + lang + '_' + task + size + '.input >' + sub_datadir + 'train.' + lang + '_' + task + size + '.input')
 		os.system('cat ' + 'al_trainselect/train.' + lang + '_' + task + size + '.input ' + 'al_trainselect/select.' + lang + '_' + task + size + '.output >' + sub_datadir + 'train.' + lang + '_' + task + size + '.output')
 
 	else:
-		os.system('cat ' + 'al_trainselect/train.' + lang + '_' + task + size + '.input ' + previous_datadir + '/increment.input >' + sub_datadir + 'train.' + lang + '_' + task + size + '.input')
-		os.system('cat ' + 'al_trainselect/train.' + lang + '_' + task + size + '.output ' + previous_datadir + '/increment.output >' + sub_datadir + 'train.' + lang + '_' + task + size + '.output')
+		os.system('cat ' + previous_datadir + 'train.' + lang + '_' + task + size + '.input ' + previous_datadir + '/increment.input >' + sub_datadir + 'train.' + lang + '_' + task + size + '.input')
+		os.system('cat ' + previous_datadir + 'train.' + lang + '_' + task + size + '.output ' + previous_datadir + '/increment.output >' + sub_datadir + 'train.' + lang + '_' + task + size + '.output')
 		os.system('mv ' + previous_datadir + 'residual.input ' + sub_datadir + 'select.' + lang + '_' + task + size + '.input')
 		os.system('mv ' + previous_datadir + 'residual.output ' + sub_datadir + 'select.' + lang + '_' + task + size + '.output')
 
@@ -201,6 +199,10 @@ def main(datadir, lang, size, select, arch, task = 'surSeg'):
 		else:
 			pass
 
+
+		### Cleaning space
+	#	subprocess.run(['rm', '-rf', FROMDIR])
+
 	### Selecting words
 
 	if select != 'all':
@@ -228,7 +230,8 @@ def main(datadir, lang, size, select, arch, task = 'surSeg'):
 			increment_input.write(w_input + '\n')
 			increment_output.write(w_output + '\n')
 
-
+		print('')
+		print('Start writing residual output' + '\n')
 		residual_input = open(sub_datadir + 'residual.input', 'w')
 		residual_output = open(sub_datadir + 'residual.output', 'w')
 		for pair in select_combo:
@@ -240,13 +243,10 @@ def main(datadir, lang, size, select, arch, task = 'surSeg'):
 				residual_output.write(w_output + '\n')
 
 
-	### Cleaning space
-	subprocess.run(['rm', '-rf', FROMDIR])
-
-	for seed in ['1', '2', '3']:
-		to_zip = datadir + lang + '_' + task + size + '/select' + select + '/' + arch + '/' + seed + '/checkpoints'
-		os.system('zip -r ' + to_zip + '.zip ' + to_zip)
-		os.system('rm -r ' + to_zip)
+#	for seed in ['1', '2', '3']:
+#		to_zip = datadir + lang + '_' + task + size + '/select' + select + '/' + arch + '/' + seed + '/checkpoints'
+#		os.system('zip -r ' + to_zip + '.zip ' + to_zip)
+#		os.system('rm -r ' + to_zip)
 
 
 if __name__== '__main__':
