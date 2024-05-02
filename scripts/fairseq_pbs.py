@@ -23,7 +23,8 @@ cd /blue/liu.ying/al_morphseg/
 if not os.path.exists('pbs/'):
 	os.system('mkdir pbs/')
 
-lgs = ['btz', 'cho', 'lez', 'ntu', 'tau']
+#lgs = ['btz', 'cho', 'lez', 'ntu', 'tau']
+lgs = ['bdg']
 sizes = ['50', '100', '500', '1000', '1500', '2000']
 
 overall_max_size = 0
@@ -103,8 +104,16 @@ for size in sizes:
 			while select < 200:
 				try:
 					os.system('bash pbs/' + lg + '_' + task + '_select' + str(select) + '.sh')
+					print('pbs/' + lg + '_' + task + '_select' + str(select))
 					print('pbs/' + lg + '_' + task + '_select' + str(select) + '.sh')
 					select += 25
 				except:
 					pass
+'''
+
+'''
+i=0
+while i <= 500:
+	os.system('bash pbs/bdg_surSeg_select' + str(i) + '.sh')
+	i += 25
 '''
