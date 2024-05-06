@@ -6,16 +6,17 @@ import os
 import sys, statistics
 from datetime import datetime  
 
-def main(datadir, lang, size, select, arch, task = 'surSeg'):
+def main(datadir, lang, size, select_interval, select, arch, task):
 
 	subprocess.run(['mkdir', '-p', datadir + lang + '_' + task + size])
-	subprocess.run(['mkdir', '-p', datadir + lang + '_' + task + size + '/select' + select])
-	subprocess.run(['mkdir', '-p', datadir + lang + '_' + task + size + '/select' + select + '/' + arch])
+	subprocess.run(['mkdir', '-p', datadir + lang + '_' + task + size + '/' + select_interval])
+	subprocess.run(['mkdir', '-p', datadir + lang + '_' + task + size + '/' + select_interval + '/select' + select])
+	subprocess.run(['mkdir', '-p', datadir + lang + '_' + task + size + '/' + select_interval + '/select' + select + '/' + arch])
 
-	sub_datadir = datadir + lang + '_' + task + size + '/select' + select + '/'
+	sub_datadir = datadir + lang + '_' + task + size + '/' + select_interval + '/select' + select + '/'
 	previous_datadir = ''
 	if select not in ['0', 'all']:
-		previous_datadir = datadir + lang + '_' + task + size + '/select' + str(int(select) - 25) + '/'
+		previous_datadir = datadir + lang + '_' + task + size + '/' + select_interval + '/select' + str(int(select) - 25) + '/'
 
 	if select == '0':
 		os.system('cp ' + 'al_trainselect/train.' + lang + '_' + task + size + '.input ' + sub_datadir)
@@ -59,9 +60,9 @@ def main(datadir, lang, size, select, arch, task = 'surSeg'):
 	confidence_dict = {}
 
 	for seed in ['1', '2', '3']:
-		PREDDIR = datadir + lang + '_' + task + size + '/select' + select + '/' + arch + '/' + seed + '/preds/' ## seed
-		FROMDIR = datadir + lang + '_' + task + size + '/select' + select + '/' + arch + '/' + seed + '/data-bin/'
-		SAVEDIR = datadir + lang + '_' + task + size + '/select' + select + '/' + arch + '/' + seed + '/checkpoints/'
+		PREDDIR = datadir + lang + '_' + task + size + '/' + select_interval + '/select' + select + '/' + arch + '/' + seed + '/preds/' ## seed
+		FROMDIR = datadir + lang + '_' + task + size + '/' + select_interval + '/select' + select + '/' + arch + '/' + seed + '/data-bin/'
+		SAVEDIR = datadir + lang + '_' + task + size + '/' + select_interval + '/select' + select + '/' + arch + '/' + seed + '/checkpoints/'
 	#    SCOREDIR = datadir + experiment + '/' + task + '/' + arch + '/' + seed + '/scores/'
 	
 		MODELPATH = SAVEDIR + 'checkpoint_best.pt'   
@@ -210,12 +211,12 @@ def main(datadir, lang, size, select, arch, task = 'surSeg'):
 			confidence_dict[k] = statistics.mean(v)
 	
 		sorted_confidence_dict = sorted(confidence_dict.items(), key = lambda item: item[1])
-		increment_words = sorted_confidence_dict[ : 25]
+		increment_words = sorted_confidence_dict[ : int(select_interval)]
 		for combo in increment_words:
 			print(combo[0], confidence_dict[combo[0]])
 		print('')
 		print('')
-		for combo in sorted_confidence_dict[26 : 30]:
+		for combo in sorted_confidence_dict[int(select_interval) + 1 : int(select_interval) + 5]:
 			print(combo[0], confidence_dict[combo[0]])
 
 		increment_input = open(sub_datadir + 'increment.input', 'w')
@@ -252,9 +253,14 @@ def main(datadir, lang, size, select, arch, task = 'surSeg'):
 if __name__== '__main__':
 	'''Command: python pathtothisfile pathtodatadir iteration/experiment
 	e.g. python scripts/fq_transformer_wu.py /blue/liu.ying/al_morphseg/al_pilot_data/ lez50 transformer'''
-	
-	main(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6])
-	print('\n########### FINISHED ', sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6], ' ###########\n')
+
+	metrics = {}
+	evaluation_file = sys.argv[1] + sys.argv[2] + '_' +  sys.argv[7] + sys.argv[3] + '/' + sys.argv[4] + '/select' + sys.argv[5] + '/' + sys.argv[6] + '/eval.txt'
+	if os.path.exists(evaluation_file) and os.stat(evaluation_file).st_size != 0:
+		pass
+	else:
+		main(sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6], sys.argv[7])
+		print('\n########### FINISHED ', sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5], sys.argv[6], sys.argv[7], ' ###########\n')
 
 #    files = [f for f in os.listdir(sys.argv[1]) if f.endswith('input') and f.startswith('train')]
 #    for filename in files:

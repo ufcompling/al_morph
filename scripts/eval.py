@@ -29,9 +29,10 @@ def metrics(gold_word, pred_word):
 datadir = sys.argv[1]
 lang = sys.argv[2]
 size = sys.argv[3]
-select = sys.argv[4]
-arch = sys.argv[5]
-task = sys.argv[6]
+select_interval = sys.argv[4]
+select = sys.argv[5]
+arch = sys.argv[6]
+task = sys.argv[7]
 
 TESTIN_gold = datadir + 'test.' + lang + '_' + task + '.output'
 
@@ -55,7 +56,7 @@ for seed in ['1', '2', '3']:
 	seed_recall_scores = []
 	seed_f1_scores = []
 
-	PREDDIR = datadir + lang + '_' + task + size + '/select' + select + '/' + arch + '/' + seed + '/preds/'
+	PREDDIR = datadir + lang + '_' + task + size + '/' + select_interval + '/select' + select + '/' + arch + '/' + seed + '/preds/'
 	GUESSPATH = PREDDIR + lang + '_' + task + size + '.testpredict'
 	print(seed, GUESSPATH)
 
@@ -88,7 +89,7 @@ for seed in ['1', '2', '3']:
 average_precision = statistics.mean(precision_scores)
 average_recall = statistics.mean(recall_scores)
 average_f1 = statistics.mean(f1_scores)
-evaluation_file = open(datadir + lang + '_' + task + size + '/select' + select + '/' + arch + '/eval.txt', 'w')
+evaluation_file = open(datadir + lang + '_' + task + size + '/' + select_interval + '/select' + select + '/' + arch + '/eval.txt', 'w')
 evaluation_file.write('Precision: ' + str(average_precision) + '\n')
 evaluation_file.write('Recall: ' + str(average_recall) + '\n')
 evaluation_file.write('F1: ' + str(average_f1) + '\n')
