@@ -46,7 +46,7 @@ for select_interval in ['25', '100', '500']:
 					if select + int(size) <= 2500:
 						print(lg, task, size, select_interval, select)
 
-				select += 25
+				select += int(select_interval)
 
 '''
 			select = 'all'

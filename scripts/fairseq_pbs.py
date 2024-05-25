@@ -1,6 +1,6 @@
 # e.g., python3 scripts/fairseq_pbs.py surSeg 25
 
-import io, os
+import io, os, sys
 
 second_string = '''#SBATCH --mail-type=END,FAIL          # Mail events (NONE, BEGIN, END, FAIL, ALL)
 #SBATCH --mail-user=liu.ying@ufl.edu     # Where to send mail	
@@ -38,9 +38,9 @@ for lg in lgs:
 	for size in sizes:
 		select_file = '/blue/liu.ying/al_morphseg/al_trainselect/select.' + lg + '_' + task + size + '.input'
 
-		iterations = int(overall_max_size / 25)
+		iterations = int(overall_max_size / int(select_interval))
 		for i in range(iterations):
-			select = str(i * 25)
+			select = str(i * int(select_interval))
 			if int(size) + int(select) <= overall_max_size: ## assuming a fixed budge for mannual annotations of 2500 words
 				for arch in ['transformer']: #, 'transformer_tiny', 'lstm']:
 
@@ -102,9 +102,9 @@ for lg in lgs:
 
 
 ## For each start size, combine pbs files for all languages for a given select interval and select size
-iterations = int(overall_max_size / 25)
+iterations = int(overall_max_size / int(select_interval))
 for i in range(iterations):
-	select = str(i * 25)
+	select = str(i * int(select_interval))
 	for size in sizes:
 		together_file = open('pbs_new/' + task + size + '_' + select_interval + '_select' + select + '.sh', 'w') # doing sbatch all together
 		c = 0

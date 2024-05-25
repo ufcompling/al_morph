@@ -16,7 +16,7 @@ def main(datadir, lang, size, select_interval, select, arch, task):
 	sub_datadir = datadir + lang + '_' + task + size + '/' + select_interval + '/select' + select + '/'
 	previous_datadir = ''
 	if select not in ['0', 'all']:
-		previous_datadir = datadir + lang + '_' + task + size + '/' + select_interval + '/select' + str(int(select) - 25) + '/'
+		previous_datadir = datadir + lang + '_' + task + size + '/' + select_interval + '/select' + str(int(select) - int(select_interval)) + '/'
 
 	if select == '0':
 		os.system('cp ' + 'al_trainselect/train.' + lang + '_' + task + size + '.input ' + sub_datadir)
@@ -126,7 +126,8 @@ def main(datadir, lang, size, select_interval, select, arch, task):
 					'--save-interval=10',
 					'--patience=10', # early stopping
 					'--skip-invalid-size-inputs-valid-test',
-					'--no-epoch-checkpoints'
+					'--no-epoch-checkpoints',
+					'--match-source-len' ## generation matches the length of the input
 					]) # not sure about these parameters to match Wu et al. 2020. 7/19/22
 	
 		print("##################### TRAINED", lang + '_' + task + size, "#####################")
