@@ -1,6 +1,6 @@
 bdg_gls 
 
 Total vocab: 20223
-Labeled types: 2408
+Labeled types: 2379
 Test size: 200
-Labeled (train/select) tokens: 18833
+Labeled (train/select) tokens: 18865

@@ -3,4 +3,4 @@ btz_surSeg
 Total vocab: 3839
 Labeled types: 1425
 Test size: 200
-Labeled (train/select) tokens: 3139
+Labeled (train/select) tokens: 3242

@@ -3,4 +3,4 @@ lez_surSegGls
 Total vocab: 11211
 Labeled types: 2605
 Test size: 200
-Labeled (train/select) tokens: 10503
+Labeled (train/select) tokens: 10490

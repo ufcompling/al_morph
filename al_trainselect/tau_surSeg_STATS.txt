@@ -3,4 +3,4 @@ tau_surSeg
 Total vocab: 14099
 Labeled types: 3913
 Test size: 200
-Labeled (train/select) tokens: 13184
+Labeled (train/select) tokens: 13156

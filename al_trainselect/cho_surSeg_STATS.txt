@@ -3,4 +3,4 @@ cho_surSeg
 Total vocab: 7793
 Labeled types: 1990
 Test size: 200
-Labeled (train/select) tokens: 7165
+Labeled (train/select) tokens: 7019

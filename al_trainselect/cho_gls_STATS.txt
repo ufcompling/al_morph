@@ -1,6 +1,6 @@
 cho_gls 
 
 Total vocab: 4222
-Labeled types: 596
+Labeled types: 590
 Test size: 200
-Labeled (train/select) tokens: 2763
+Labeled (train/select) tokens: 3066
