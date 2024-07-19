@@ -1,0 +1,6 @@
+cho_infl 
+
+Total vocab: 4221
+Labeled types: 595
+Test size: 200
+Labeled (train/select) tokens: 2939

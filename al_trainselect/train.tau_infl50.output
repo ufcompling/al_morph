@@ -1,0 +1,50 @@
+advlizer
+v OUT:AWAY 1PL.S:Ø.IPV:H.
+n
+n
+post
+verbprt
+dir NTRL.
+advlizer
+v 3PL.O. DH.PFV:1SG.S:Ø.
+v DH.PFV:1SG.S:Ø.
+post 1PL.P.
+v
+v TERM. IT. 1PL.S:N.PFV:D.
+n
+v 3PL.S:Ø.IPV:D.
+n 3SG.PSR.
+v
+proform
+post
+v AR.O. QUAL:Ø.IPV:2PL.S.
+v
+proform
+n
+v 3PL.S:Ø.IPV:Ø.
+adv
+adv
+v 3SG.S:Ø.IPV:H.
+advlizer
+v 1PL.S. QUAL. INC:AA.IPV:Ø.
+verbprt
+advlizer
+v
+coordconn
+v CONT. 3PL.S:Ø.IPV:Ø.
+v CONT. 3SG.S:Ø.IPV:H.
+@@@
+advlizer
+@@@
+post
+v 3PL.S:Ø.IPV:Ø.
+post 2PL.P.
+v IT. 1PL.S:INC:Ø.IPV:Ø.
+DM
+post
+v
+DM
+n
+proform
+v IT. 1PL.S:AA.PFV:L.
+v IT. 3PL.S:AA.IPV:D.

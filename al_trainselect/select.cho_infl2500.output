@@ -1,0 +1,439 @@
+n
+phrase NEG PST
+determiner
+@@@ REM.PAST
+v
+n
+@@@ 1PI
+@@@ CON:AC
+determiner THAT LOC
+proform WHEN
+v WHEN
+@@@
+n
+@@@ PART
+@@@ 1PI
+directional
+suffix
+@@@
+@@@ 1PI
+@@@ THAT
+@@@ COMP:PREV
+n
+v
+v 1SII SS
+@@@
+@@@ INDEED
+@@@ 1PI
+@@@ WHEN
+@@@ PART
+v
+@@@ 1PI
+adv
+@@@ 1SI
+n
+proform
+@@@ USED:TO REM.PAST
+verbprt YOU
+n
+indefinite IRR:DS
+n
+v WHEN
+conj
+@@@ REM.PAST
+proform WHEN
+@@@ COMP:DS
+@@@ TNS
+verbprt YOU
+@@@ 1MPIII
+v
+n
+@@@
+v TNS
+verbprt YOU 1SIII
+n
+v
+n
+n
+n
+v
+n
+@@@ THAT
+n
+v
+conj
+@@@ TNS
+@@@
+conj
+n
+@@@ COMP:DS
+pro
+@@@ 1PI
+n
+pro
+@@@ 1PI
+n
+v 1SII
+v
+n 2PII
+@@@ 1PI
+v
+@@@ TNS
+n
+adv
+@@@ 1PI
+v START
+pro
+verbprt YOU
+n
+@@@ THAT
+n
+pro
+determiner
+@@@ 1SI REM.PAST
+@@@
+v
+n
+@@@ 1PI
+n
+@@@ NOM2
+v
+n
+n
+v TNS
+exclamation
+@@@ NOM2
+n
+@@@ THAT
+n
+n
+@@@ DEM NOM2
+v
+verbprt YOU
+@@@ 1SI TNS
+proform WHEN
+@@@ NOM2
+determiner CON:AC
+@@@ 1PI
+@@@ 2PI
+v
+@@@ REM.PAST
+conj
+@@@
+conj
+directional
+v
+@@@ COMP:DS
+@@@ 1PI
+v
+n
+adv
+v
+n
+v REM.PAST
+n
+conj
+n
+@@@ 2PI
+@@@ REM.PAST
+n
+pro
+directional
+v PST FOC:DS
+n
+@@@ NOM2
+n
+adv
+interrogative
+pro
+pro
+v REM.PAST
+n
+@@@ PART
+@@@ III
+@@@ 1PI
+adj
+@@@ THAT
+n
+@@@
+n
+n
+@@@ LOC
+n
+v
+@@@ 1PI
+n
+n
+v
+conj
+pro
+proform WHEN
+v POT REM.PAST
+n
+@@@ IRR:DS
+n
+@@@ 1SI
+@@@ 2PII
+n
+directional
+@@@ 1PI
+v
+@@@ USED:TO REM.PAST
+@@@ USED:TO PST
+v
+post
+v START
+verbprt YOU
+proform WHEN
+@@@ 1PI
+@@@ REM.PAST
+v
+v
+@@@ PART
+exclamation
+determiner THAT LOC
+n
+@@@ TNS
+@@@ 1PI
+adj
+@@@ 1PI
+@@@ 1SI TNS
+determiner THAT LOC
+determiner
+n
+@@@ 1PI
+@@@
+directional
+v
+adv
+v
+@@@
+n
+n
+verbprt YOU
+@@@ CON:AC
+@@@ 1PI
+@@@ PART:DS
+n
+@@@ 1PI
+v IRR:DS
+conj
+v
+pro
+@@@ BECAUSE:DS
+@@@ REM.PAST
+@@@ LOC
+n WHITE:PERSON
+adv
+@@@ TNS
+conj
+proform WHEN
+n
+v 1SI REM.PAST
+v
+@@@ 1PI
+@@@ 1PI
+@@@
+@@@ 1SI TNS
+verbprt YOU
+n
+@@@ THAT
+n
+@@@ THAT
+@@@ 1PI
+@@@ THAT
+determiner THAT LOC
+n III
+verbprt YOU
+@@@ PART
+adv
+n
+v
+v POT
+@@@ III
+n
+v
+determiner
+@@@ 1PI
+@@@ PART
+@@@ THAT
+v
+n
+v TNS
+pro
+@@@ 1PI
+@@@
+conj
+v
+v
+@@@ LOC
+determiner CON:AC
+@@@
+n
+conj
+n WHITE:PERSON
+@@@ LOC PST
+@@@ USED:TO REM.PAST
+v
+@@@ THAT
+determiner THAT LOC
+exclamation
+@@@
+n
+@@@ THAT
+@@@
+n
+determiner
+v
+v
+@@@
+@@@
+v
+n
+@@@ NOM2
+directional
+proform WHEN
+v
+n
+n
+@@@ IRR:SS
+directional
+n
+proform
+n
+n WHITE:PERSON
+n
+@@@ PART
+@@@ 1PI
+@@@ USED:TO PST
+n
+@@@ COMP:DS
+n
+adv
+verbprt YOU
+@@@ BECAUSE:DS
+n
+n
+pro
+verbprt YOU
+@@@ 1PI
+n
+adv
+@@@ LOC
+n ENGLISH
+@@@ REM.PAST
+directional
+@@@ THAT
+@@@ PART
+n
+adv
+@@@
+n 2PII
+pro
+conj
+@@@
+@@@
+conj
+@@@ WHEN
+@@@
+proform WHEN
+verbprt YOU
+v III TNS
+n WHITE:PERSON
+@@@ NOM2
+n
+n
+@@@
+@@@ 1PI
+@@@ WHATEVER.KIND.OF
+n
+conj
+n
+n
+n
+verbprt YOU
+n
+@@@ CON:AC
+v
+n
+conj
+verbprt YOU
+v
+@@@ THAT
+interrogative LOC
+@@@ IRR:DS
+@@@ PST
+v TNS
+n
+n
+n
+v
+conj
+n
+@@@ COMP:DS
+@@@ REM.PAST
+v REM.PAST
+@@@ 1SI IRR IRR:SS
+verbprt YOU
+indefinite PST COMP:DS
+directional
+determiner THAT LOC
+n
+n
+directional
+n
+v
+n 2SIII
+n
+v
+@@@ TNS
+@@@ BECAUSE:DS
+@@@
+verbprt YOU
+pro
+@@@ IRR:SS
+interj
+@@@ WHATEVER.KIND.OF
+determiner THAT LOC
+n
+v 1SI WHEN
+v STORE
+verbprt YOU
+v START
+verbprt YOU
+v
+@@@ 1PI
+@@@
+v 1SI IRR TNS
+@@@
+n
+n
+interrogative LOC
+determiner THAT LOC
+directional
+@@@ POT
+@@@ NOM2
+@@@
+n WHITE:PERSON
+post
+n
+verbprt YOU
+@@@ USED:TO PST
+v
+@@@ COMP:DS
+determiner
+adj
+@@@ COMP:DS
+@@@
+v START
+pro
+n
+n
+@@@ 1PI
+conj
+@@@ USED:TO PST
+v PST Q
+n
+n
+@@@ 1SI TNS
+@@@ KIND:OF

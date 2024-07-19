@@ -1,0 +1,500 @@
+advlizer
+v OUT:AWAY 1PL.S:Ø.IPV:H.
+n
+n
+post
+verbprt
+dir NTRL.
+advlizer
+v 3PL.O. DH.PFV:1SG.S:Ø.
+v DH.PFV:1SG.S:Ø.
+post 1PL.P.
+v
+v TERM. IT. 1PL.S:N.PFV:D.
+n
+v 3PL.S:Ø.IPV:D.
+n 3SG.PSR.
+v
+proform
+post
+v AR.O. QUAL:Ø.IPV:2PL.S.
+v
+proform
+n
+v 3PL.S:Ø.IPV:Ø.
+adv
+adv
+v 3SG.S:Ø.IPV:H.
+advlizer
+v 1PL.S. QUAL. INC:AA.IPV:Ø.
+verbprt
+advlizer
+v
+coordconn
+v CONT. 3PL.S:Ø.IPV:Ø.
+v CONT. 3SG.S:Ø.IPV:H.
+@@@
+advlizer
+@@@
+post
+v 3PL.S:Ø.IPV:Ø.
+post 2PL.P.
+v IT. 1PL.S:INC:Ø.IPV:Ø.
+DM
+post
+v
+DM
+n
+proform
+v IT. 1PL.S:AA.PFV:L.
+v IT. 3PL.S:AA.IPV:D.
+v INDF:3SG.S:INC. QUAL:DH.PFV:L.
+mod
+@@@ 3SG.S:Ø.IPV:Ø.
+advlizer ADVZR
+@@@ MED:AR.
+v 3PL.S>3SG.P. PP.
+v IT. 3PL.S:Ø.IPV:D.
+v OUT. IT. 3SG.S:AA.PFV:D.
+adv
+n
+coordconn
+v 3PL.S>3SG.O. INC:AA.IPV:Ø.
+nomprt
+dir NTRL.
+n INDF.PSR.
+mod
+v 3SG.S:QUAL:DH.PFV:L.
+dir
+v TO.TRAIL. IT. 1PL.S:N.PFV:D.
+inter
+v QUAL:Ø.IPV:1SG.S:H.
+n
+nomprt
+coordconn
+DM
+post
+adv
+v AR.S. MIND. INDF.O:INC:AA.IPV:1SG.S:H.
+@@@ NTRL.
+@@@ NTRL.
+v UP. Ø.IPV:2SG.S:Ø.
+dir
+coordconn
+@@@ 3SG.S:OPT:Ø.
+proform
+@@@
+v PP. DH.PFV:1SG.S:L.
+post
+v ?. PRMB.
+v 3PL.S:Ø.IPV:D.
+v UP. 3SG.S:QUAL:DH.PFV:Ø.
+v IT. 1PL.S:INC:Ø.IPV:D.
+@@@
+adv
+v 3SG.S:QUAL:OPT:L.
+n
+advlizer
+dir NTRL.
+post 3SG.P.
+v 3SG.S:Ø.IPV:H.
+coordconn AND.THEN
+v 1SG.P. PP. QUAL:OPT:2SG.S:L.
+v ?. 3SG.O. 1PL.S.
+v 3PL.S:Ø.IPV:H.
+verbprt
+n
+nomprt
+adv
+v 3SG.S:DH.PFV:H.
+n
+@@@ TERM. 3PL.S:DH.PFV:Ø.
+coordconn
+n
+n
+post
+n
+coordconn AND.THEN
+v 3PL.S:Ø.IPV:Ø.
+v
+v
+DM
+n
+post 1PL.P.
+post
+advlizer
+v 3SG.S>3SG.P. Ø.IPV:H.
+verbprt
+coordconn AND.THEN
+v 3SG.S>3SG.P. Ø.IPV:H.
+v IT. 3SG.S:Ø.IPV:Ø.
+imp
+@@@
+n
+post RECP.P.
+n 3SG.PSR.
+n 1SG.PSR.
+post
+v AWAY. INDF. 3SG.S:N.PFV:L.
+advlizer
+adv
+n 3SG.S>3SG.PSR.
+adv
+v 3SG.S>3SG.P. Ø.IPV:H.
+n REFL.PSR.
+n
+coordconn
+post
+v 3PL.S:Ø.IPV:L.
+mod
+advlizer
+@@@ 3SG.S>3SG.O.
+DM
+v CON. QUAL:I.PFV:1SG.S:H.
+advlizer
+advlizer
+advlizer
+DM
+n 3SG.PSR.
+v 3SG.S>3SG.P. Ø.IPV:H.
+post
+n
+v QUAL:OPT:2SG.S:H.
+pro
+dir NTRL.
+v HAIR. 3PL.S:Ø.PFV:L.
+v 3SG.S:INC:Ø.IPV:Ø
+v UP. 3SG.S:Ø.PFV:Ø.
+v 3SG.S:QUAL:DH.PFV:L.
+n
+post
+n
+advlizer
+n 1SG.PSR. AA.PFV:Ø.
+cardnum
+v INC. DH.PFV:1SG.S:Ø.
+v 3SG.S:AA.IPV:L.
+adv
+n
+v QUAL:Ø.IPV:2SG.S:Ø.
+n 1SG.PSR.
+@@@
+adv
+adv
+post 3SG.S>3SG.P.
+n
+advlizer
+v 3SG.S:Ø.PFV:Ø.
+v 3PL.S:Ø.IPV:L.
+dir MED.
+coordconn
+n
+adv
+n 3PL.P.
+v 3PL.S>3SG.P. UP. INDF:INC. 3SG.S:AA.PFV:H.
+n
+v IT. 3PL.S. INC:Ø.IPV:D.
+@@@
+@@@ NTRL.
+v TERM. IT. 1PL.S:N.PFV:D.
+dir NTRL.
+n
+coordconn
+nomprt
+v ?. 3PL.S:Ø.IPV:D.
+advlizer
+post 1SG.P.
+adv
+advlizer
+advlizer
+@@@ TERM. 1SG.O. 3PL.S. 3SG.S:QUAL:AA.PFV:H.
+adv
+v 3SG.S:AA.IPV:Ø.
+v IT. 3SG.S:INC:DH.PFV:D.
+@@@ AR.S:Ø.PFV:Ø.
+adv
+v 3SG.S:QUAL:DH.PFV:L.
+post 1SG.P.
+adv
+post 3SG.S>3SG.P.
+coordconn
+adv
+proform
+n 1SG.PSR.
+n 1SG.PSR.
+coordconn
+advlizer
+coordconn
+n
+n
+inter
+v OUT. 3PL.S:AA.PFV:Ø.
+dir
+interj
+mod
+advlizer
+n
+adv
+post
+v PRMB. 3PL.S. INC:Ø.IPV:D.
+n
+v DANCE. 3PL.S:Ø.IPV:L.
+v INC:OPT:1SG.S:Ø.
+v 3SG.S:Ø.IPV:H.
+n 1SG.PSR.
+v 3SG.S:INC:AA.IPV:Ø.
+@@@
+coordconn
+n
+coordconn
+advlizer
+v
+n
+v AR.S:Ø.PFV:Ø.
+v 1PL.S:Ø.IPV:L.
+v ASHORE. IT. 1PL.S:INC:Ø.IPV:Ø.
+v
+v 3PL.S. N.PFV:Ø.
+v
+@@@
+coordconn
+advlizer
+v
+advlizer
+pro
+dir
+v 3SG.S>3SG.O. QUAL:Ø.IPV:H.
+post 1PL.P.
+v 1PL.S. QUAL:Ø.IPV:H.
+nomprt
+v QUAL:Ø.IPV:1SG.S:Ø.
+v 3PL.S:Ø.IPV:Ø.
+inter
+post 3PL.P.
+coordconn
+post
+n
+dir NTRL.
+dir MED.
+v 1PL.S:OPT:Ø.
+v INTO.WATER. 3SG.S>3SG.O. 3SG.S:AA.PFV:H.
+adv
+post 3PL.S>3SG.P.
+n
+adv
+post 3SG.S>3SG.P.
+v IT. 3SG.S:AA.IPV.
+v IT. 2SG.O. N.PFV:1SG.S:H.
+n
+adv
+@@@
+n 2SG.PSR.
+n
+adv 3PL.S:INC:Ø.IPV:Ø.
+nomprt
+nvp 3SG.O.
+v 3SG.S:QUAL:Ø.PFV:Ø.
+nvp
+n
+v OUT. IT. INDF.O. 3SG.S:QUAL:DH.PFV:L.
+proform
+@@@
+adv
+@@@ TERM.
+v
+advlizer ADVZR
+post
+coordconn AND.THEN
+v PEJ. QUAL:Ø.PFV:1SG.S:L.
+n 2SG.PSR.
+post
+v AR.S:Ø.PFV:L.
+post
+post
+post 3SG.P.
+v 3PL.S>3PL.O. QUAL:Ø.IPV:Ø.
+v 3SG.S>3SG.P. Ø.IPV:H.
+v 3PL.S:Ø.IPV:Ø.
+n
+n
+n 1SG.PSR.
+@@@
+post
+v 3SG.S:DH.PFV:Ø.
+v
+post
+mod
+n
+v 2PL.O. TRADE. INC:QUAL:AA:IPV:1SG.S:H.
+post
+v INC:AA.IPV:2SG.S:Ø.
+v IT. 3SG.S:AA.PFV:H.
+v 1PL.S:Ø.IPV:Ø.
+verbprt
+v OUT. HEAD. 3SG.S:AA.PFV:Ø.
+advlizer
+v 3SG.S:AA.IPV:L.
+v 3PL.S:AA.IPV:Ø.
+v 3SG.P. QUAL:Ø.IPV:1SG.S:Ø.
+post
+coordconn
+proform
+post
+proform
+advlizer
+v INC:OPT:1SG.S:Ø.
+advlizer
+adv
+v IT. DH.PFV:1SG.S:L.
+coordconn
+proform
+n
+coordconn AND.THEN
+advlizer
+v 3PL.P. EXTERMINATE. INDF.O:AA.PFV:Ø.
+coordconn
+v IT. INC:QUAL:Ø.IPV:D.
+post
+v 3PL.S:Ø.IPV:H.
+post
+dir
+advlizer
+post
+n
+post
+coordconn
+v 3PL.S:Ø.IPV:Ø.
+n
+proform
+v 3SG.P. PP. 1PL.S. QUAL:NEG.PFV:L.
+v
+n
+v PP. INDF.O:INC:AA.IPV:2PL.S:H.
+coordconn
+n
+@@@ 3PL.S:Ø.IPV:Ø.
+@@@ ADJC.
+advlizer
+advlizer
+post 3PL.P.
+advlizer
+advlizer
+v Ø.IPV:2SG.S:H.
+adv
+n
+v CONT. INDF.O:Ø.IPV:2PL.S:Ø.
+n INDF.PSR.
+post 1SG.P.
+post 3PL.P.
+inter
+n
+v 3PL.S>3SG.O. Ø.IPV:Ø.
+v 3SG.S>3SG.O. N.PFV:Ø.
+@@@
+v 3SG.S>3SG.P. Ø.IPV:H.
+nomprt
+adv
+v
+coordconn
+post
+v IT. 3PL.S. INC.DH.PFV:D.
+v COMPLETELY. MOUTH INC. QUAL:Ø.IPV:1SG.S:H.
+DM
+coordconn
+proform
+adv
+post
+@@@
+mod
+adv
+v 3PL.S.
+v OUT. 3PL.O. 3PL.S. INC:AA.IPV:Ø.
+@@@ NTRL.
+proform
+v 3SG.S:QUAL:AA.PFV.
+post
+post
+v 3SG.S:INC:DH.PFV:Ø.
+v 3SG.S:INC:Ø.IPV:Ø
+advlizer
+advlizer
+v CONT. I.PFV:Ø.
+coordconn
+DM
+DM
+v CON. INDF.O. 3SG.S:Ø.IPV:L.
+post
+post
+n 1SG.PSR.
+v 3SG.P. PP. Ø.PFV:1SG.S:D.
+v IT. 1PL.S:DH.PFV:D.
+post 1PL.P.
+n GIRL
+n
+n
+post
+v DOWN. 3PL.S:N.PFV:Ø.
+coordconn AND.THEN
+@@@
+advlizer
+n
+n
+proform
+adv
+advlizer
+n 3SG.PSR.
+verbprt
+DM
+dir
+post
+proform
+n
+adv
+advlizer
+adv
+post 3SG.P.
+post 3PL.S>3SG.P.
+post 3PL.P.
+n
+adv
+proform
+n 1SG.PSR.
+coordconn
+advlizer
+verbprt
+n
+v AR.S:Ø.PFV:Ø.
+v 3PL.S:Ø.IPV:H.
+v 3PL.S:Ø.IPV:Ø. NEG.PFV:1SG.S:D.
+v PRMB. 1PL.S:INC:Ø.IPV:D.
+nomprt
+n
+proform
+@@@
+nomprt
+adv
+coordconn
+v 1PL.S:INC:Ø.IPV:Ø.
+dir NTRL.
+proform
+n
+n
+coordconn AND.THEN
+n 1SG.PSR.
+v IT. 3SG.S:QUAL:Ø.IPV:L.
+@@@
+adv
+v INC:AA.IPV:1SG.S:Ø.
+post
+coordconn
+n
+@@@
+nomprt
+@@@ 3PL.P.
+adv
+coordconn
+dir
+v 3SG.S>AR.O:DH.PFV:H.
+post
+adv
+coordconn

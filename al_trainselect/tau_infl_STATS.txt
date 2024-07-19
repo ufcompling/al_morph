@@ -1,0 +1,6 @@
+tau_infl 
+
+Total vocab: 11897
+Labeled types: 2790
+Test size: 200
+Labeled (train/select) tokens: 11393

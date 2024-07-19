@@ -1,0 +1,6 @@
+btz_infl 
+
+Total vocab: 3779
+Labeled types: 1422
+Test size: 200
+Labeled (train/select) tokens: 3356

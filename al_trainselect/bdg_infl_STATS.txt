@@ -1,0 +1,6 @@
+bdg_infl 
+
+Total vocab: 20223
+Labeled types: 2375
+Test size: 200
+Labeled (train/select) tokens: 18175

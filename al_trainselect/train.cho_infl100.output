@@ -1,0 +1,100 @@
+@@@ NOM2
+@@@ 1PI
+n
+n
+v PST
+exclamation
+v PART
+exclamation
+n
+n
+v START
+v
+@@@
+determiner CON:AC
+v 1SI TNS
+n
+@@@
+n BOGUE.CHITTO
+v
+conj
+determiner THAT LOC
+@@@
+n WHITE:PERSON
+pro
+pro
+conj
+n
+@@@
+n
+@@@ 1PI
+pro
+v
+v
+@@@ 1PI
+n
+@@@ KIND:OF
+verbprt YOU
+n
+determiner
+@@@ TNS
+v
+n
+proform WHEN
+@@@
+@@@ THAT
+@@@
+@@@
+n
+conj
+@@@ 1PI
+@@@
+@@@ 1PI
+@@@ PART
+pro
+@@@ 2PI
+proform WHEN
+v 1SI WHEN
+@@@ COMP:DS
+n
+@@@ PART:DS
+v
+n 2SIII
+pro
+@@@ REM.PAST
+exclamation
+v 1SII
+v
+post
+exclamation
+v
+@@@ COMP:DS
+conj
+@@@ 1PI
+n
+phrase 1SII TNS
+@@@ CON:AC
+n
+conj
+@@@ THAT
+pro
+proform WHEN
+@@@ 1PI
+v
+directional
+n
+adv
+pro
+v
+@@@ NOM2
+@@@ USED:TO PST
+@@@
+v
+@@@ REM.PAST
+@@@ USED:TO PST
+proform WHEN
+pro
+v
+n
+n
+v WHEN

@@ -1,0 +1,6 @@
+ntu_infl 
+
+Total vocab: 15352
+Labeled types: 3683
+Test size: 200
+Labeled (train/select) tokens: 14529
