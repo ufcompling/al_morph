@@ -43,15 +43,12 @@ with open(TESTIN_gold) as f:
 		toks = line.strip().split()
 		test_gold.append(toks)
 
-print(TESTIN_gold)
-print(len(test_gold))
-print('\n')
 
 precision_scores = []
 recall_scores = []
 f1_scores = []
 
-for seed in ['1', '2', '3']:
+for seed in ['1', '2']: #, '3']:
 	seed_precision_scores = []
 	seed_recall_scores = []
 	seed_f1_scores = []
